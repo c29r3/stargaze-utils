@@ -4,7 +4,7 @@
 	"binary_link": "https://github.com/public-awesome/stargaze/releases/download/v2.0.0/stargaze_2.0.0_linux_amd64.tar.gz",
 	"service_file": "https://raw.githubusercontent.com/c29r3/stargaze-utils/main/stargaze.service",
 	"service_name": "starsd",
-	"chain-id": "stargaze-1",
+	"chain_id": "stargaze-1",
 	"coin": "ustars",
 	"genesis": "https://raw.githubusercontent.com/public-awesome/mainnet/main/stargaze-1/genesis.tar.gz",
 	"seeds": "70ed826888f102c7c1ceb4d07287956628a53508@174.138.124.7:36656,722079345d941cd2da3daedea548c909d9b83ec5@104.248.101.113:36656",
