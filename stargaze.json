@@ -2,6 +2,7 @@
 	"binary_version": "2.0.0",
 	"binary_name": "starsd",
 	"binary_link": "https://github.com/public-awesome/stargaze/releases/download/v2.0.0/stargaze_2.0.0_linux_amd64.tar.gz",
+	"service_file": "https://raw.githubusercontent.com/c29r3/stargaze-utils/main/stargaze.service",
 	"chain-id": "stargaze-1",
 	"coin": "ustars",
 	"genesis": "https://raw.githubusercontent.com/public-awesome/mainnet/main/stargaze-1/genesis.tar.gz",
