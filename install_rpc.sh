@@ -30,7 +30,8 @@ PORT_OFFSET=1
 # install requirements
 sudo apt-get update
 sudo apt-get install -y jq git curl wget build-essential bc
-curl -s https://gist.githubusercontent.com/c29r3/1eb5359c325a7f7e14802bf25c0193c2/raw/239cd565494574a33a6f85f0dc3273c1e0ba8fa1/installgo | bash -s - 1.17.1
+curl -s https://gist.githubusercontent.com/c29r3/3130b5cd51c4a94f897cc58443890c28/raw/134d86f8a90b2bbb7c68cd6bb663c60c5846ae31/install_golang.sh | bash -s - 1.17.1
+
 
 # install binary
 wget -qO- $BINARY_LINK | tar -C /usr/local/bin/ -xzf-
