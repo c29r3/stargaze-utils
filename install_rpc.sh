@@ -97,7 +97,7 @@ git clone https://github.com/tendermint/tendermint
 cd tendermint
 git checkout callum/app-version
 make install
-~/go/bin/tendermint set-app-version 1 --home ~/.$BIN_NAME
+#~/go/bin/tendermint set-app-version 1 --home ~/.$BIN_NAME
 
 sudo systemctl start $BIN_NAME
 sudo systemctl status $BIN_NAME
