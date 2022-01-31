@@ -14,7 +14,7 @@ PORT_OFFSET=1
 # install requirements
 sudo apt-get update
 sudo apt-get install -y jq git curl wget build-essential bc
-curl -s https://gist.githubusercontent.com/c29r3/1eb5359c325a7f7e14802bf25c0193c2/raw/239cd565494574a33a6f85f0dc3273c1e0ba8fa1/installgo | bash -s - 1.17.1
+#curl -s https://gist.githubusercontent.com/c29r3/1eb5359c325a7f7e14802bf25c0193c2/raw/239cd565494574a33a6f85f0dc3273c1e0ba8fa1/installgo | bash -s - 1.17.1
 
 # install binary
 wget -qO- $BINARY_LINK | tar -C /usr/local/bin/ -xzf-
