@@ -43,9 +43,10 @@ sudo systemctl enable $BIN_NAME
 # init configs
 $BIN_NAME config chain-id $CHAIN_ID
 $BIN_NAME init c29r3_RPC --chain-id $CHAIN_ID
+rm $HOME/.$BIN_NAME/config/genesis.json
 
 # download genesis file
-wget -qO- $GENESIS | tar -C ~/.starsd/config/ -xzf-
+wget -qO- $GENESIS | tar -C ~/.$BIN_NAME/config/ -xzf-
 
 # changing values in config files
 CONF_PATH=$(echo -e "$HOME/.$BIN_NAME/config/config.toml")
@@ -58,13 +59,15 @@ sed -i 's|proxy_app = "tcp://127.0.0.1:26658"|proxy_app = "tcp://127.0.0.1:2'"$P
 
 sed -i 's|laddr = "tcp://127.0.0.1:26657"|laddr = "tcp://0.0.0.0:2'"$PORT_OFFSET"'657"|g' $CONF_PATH
 
-sed -i 's|prometheus_listen_addr = ":26650"|prometheus_listen_addr = ":2'"$PORT_OFFSET"'650"|g' $CONF_PATH
+sed -i 's|prometheus_listen_addr = ":26660"|prometheus_listen_addr = ":2'"$PORT_OFFSET"'660"|g' $CONF_PATH
 
 sed -i "s|persistent_peers = \"\"|persistent_peers = \"$PEERS\"|g" $CONF_PATH
 
 sed -i "s|seeds = \"\"|seeds = \"$SEEDS\"|g" $CONF_PATH
 
 sed -i "s|address = \"0.0.0.0:9091\"|address = \"0.0.0.0:9"$PORT_OFFSET"91\"|g" $APP_CONF_PATH
+
+sed -i "s|address = \"0.0.0.0:9090\"|address = \"0.0.0.0:9"$PORT_OFFSET"90\"|g" $APP_CONF_PATH
 
 sed -i "s|address = \"tcp://0.0.0.0:1317\"|address = \"tcp://0.0.0.0:1"$PORT_OFFSET"17\"|g" $APP_CONF_PATH
 
