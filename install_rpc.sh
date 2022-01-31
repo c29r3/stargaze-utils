@@ -58,6 +58,8 @@ sed -i 's|proxy_app = "tcp://127.0.0.1:26658"|proxy_app = "tcp://127.0.0.1:2'"$P
 
 sed -i 's|laddr = "tcp://127.0.0.1:26657"|laddr = "tcp://0.0.0.0:2'"$PORT_OFFSET"'657"|g' $CONF_PATH
 
+sed -i 's|prometheus_listen_addr = ":26650"|prometheus_listen_addr = ":2'"$PORT_OFFSET"'650"|g' $CONF_PATH
+
 sed -i "s|persistent_peers = \"\"|persistent_peers = \"$PEERS\"|g" $CONF_PATH
 
 sed -i "s|seeds = \"\"|seeds = \"$SEEDS\"|g" $CONF_PATH
