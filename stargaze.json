@@ -1,13 +1,12 @@
 {
-	"binary_version": "2.0.0",
+	"binary_version": "6.0.0",
 	"binary_name": "starsd",
-	"binary_link": "https://github.com/public-awesome/stargaze/releases/download/v2.0.0/stargaze_2.0.0_linux_amd64.tar.gz",
+	"binary_link": "https://github.com/public-awesome/stargaze/releases/download/v6.0.0/stargaze_6.0.0_linux_amd64.tar.gz",
 	"service_file": "https://raw.githubusercontent.com/c29r3/stargaze-utils/main/stargaze.service",
-	"service_name": "starsd",
 	"chain_id": "stargaze-1",
 	"coin": "ustars",
 	"genesis": "https://raw.githubusercontent.com/public-awesome/mainnet/main/stargaze-1/genesis.tar.gz",
 	"seeds": "70ed826888f102c7c1ceb4d07287956628a53508@174.138.124.7:36656,722079345d941cd2da3daedea548c909d9b83ec5@104.248.101.113:36656",
 	"persistent_peers": "1524dd60331c56d198deabbb70238c2cc69119cca@161.97.122.216:36656,320e4b81ab327dd2593a39de0d3ae718fdb9347c@176.9.168.220:26656,f89e655de3e6804e6448de3de3428bea1fd0fa97@135.181.21.55:36656,75ea9c7b04be4a5779853b6e17c773ab092652c8@91.230.111.50:26656,0c7e82641f81754fc30158587c7e4a30ddb5c967@54.216.187.98:26656,387c32677c54dd4627366ffdf8e2dda68e71af69@54.193.168.147:26656",
-	"rpc_servers": "http://135.181.60.250:16657,http://75.119.154.99:26657,http://162.55.86.239:26657,http://116.202.169.136:46657,http://143.198.153.179:26657,http://88.99.137.7:26657,http://5.9.97.218:26657,http://195.201.161.56:26657,http://3.108.250.216:26657,http://65.21.178.110:26657,http://95.217.207.236:56657,http://65.21.204.185:26658"
+	"rpc_servers": "https://stargaze.c29r3.xyz:443/rpc"
 }
