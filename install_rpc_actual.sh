@@ -60,7 +60,7 @@ echo "download wasm"
 rm -rf ~/.${BIN_NAME}/wasm
 mkdir -p ~/.${BIN_NAME}/wasm
 cd ~/.${BIN_NAME}/wasm
-wget -O - http://135.181.60.250:8086/stargaze/stargaze_wasm.tar | tar xf -
+wget -O - https://snapshots.c29r3.xyz/stargaze/stargaze_wasm.tar | tar xf -
 
 
 echo "download snapshot"
