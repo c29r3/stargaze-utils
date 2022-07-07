@@ -68,8 +68,8 @@ rm -rf ~/.${BIN_NAME}/data
 mkdir -p ~/.${BIN_NAME}/data
 cd ~/.${BIN_NAME}/data
 
-SNAP_NAME=$(curl -s http://135.181.60.250:8086/stargaze/ | egrep -o ">stargaze.*tar" | tr -d ">"); \
-wget -O - http://135.181.60.250:8086/stargaze/${SNAP_NAME} | tar xf -
+SNAP_NAME=$(curl -s https://snapshots.c29r3.xyz/stargaze/ | egrep -o ">stargaze.*tar" | tr -d ">"); \
+wget -O - https://snapshots.c29r3.xyz/stargaze/${SNAP_NAME} | tar xf -
 
 
 
